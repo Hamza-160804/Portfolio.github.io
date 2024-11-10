@@ -61,7 +61,7 @@ function createSkillBars() {
 }
 
 // Call the function to create skill bars when the page loads
-window.onload = createSkillBars;
+window.onload = createSkillBars();
 
 // ----------------------- Toggle Details in "About" section -----------------------------
 function toggleDetails() {
