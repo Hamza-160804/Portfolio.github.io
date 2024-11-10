@@ -60,9 +60,6 @@ function createSkillBars() {
   });
 }
 
-// Call function when page loads
-window.onload = createSkillBars;
-
 // Call the function to create skill bars when the page loads
 window.onload = createSkillBars;
 
