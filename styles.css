@@ -389,6 +389,13 @@ nav a:hover::after {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     width: 30%;
 }
+.services-list div:hover{
+    background-color: #170550;
+    color: #d85f00;
+    transform: translateY(-10px);
+    backdrop-filter: blur(10px); 
+    box-shadow: -10px 0 10px #31065a;
+}
 
 .services-list div i {
     font-size: 50px;
