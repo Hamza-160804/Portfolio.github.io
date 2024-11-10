@@ -1,17 +1,17 @@
 // ----------------------- Form submission for Google Sheets -----------------------------
 const scriptURL = "https://script.google.com/macros/s/AKfycbxj9ZjsnwLG0EyoIW7c14xDUTXjvb_vAmBQvpB6g9WvOV0R2UgxpEMkiCXq_lXvrscjlg/exec";
-const form = document.forms["submit-to-google-sheet"]; 
+const form = document.forms["submit-to-google-sheet"];
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault(); 
+  e.preventDefault();
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
-      alert("Message sent successfully!"); 
-      form.reset(); 
+      alert("Message sent successfully!");
+      form.reset();
     })
     .catch((error) => {
-      alert("An error occurred. Please try again."); 
+      alert("An error occurred. Please try again.");
     });
 });
 
@@ -45,10 +45,10 @@ function createSkillBars() {
 
     const progress = document.createElement("div");
     progress.classList.add("progress");
-    progress.style.width = `0%`; // Initial width to 0% for animation
+    progress.style.width = `0%`;
     setTimeout(() => {
-      progress.style.width = `${skill.percentage}%`; // Animate to actual percentage
-    }, 100); // Short delay to trigger animation
+      progress.style.width = `${skill.percentage}%`;
+    }, 100);
 
     progressBar.appendChild(progress);
 
@@ -60,7 +60,6 @@ function createSkillBars() {
   });
 }
 
-// Call the function to create skill bars when the page loads
 window.onload = createSkillBars();
 
 // ----------------------- Toggle Details in "About" section -----------------------------
@@ -114,15 +113,15 @@ function openmenu() {
 }
 
 function closemenu() {
-  document.getElementById("sidemenu").style.right = "-200px"; // Move menu off-screen
+  document.getElementById("sidemenu").style.right = "-200px";
   document.querySelector(".fa-times").style.display = "none";
   document.querySelector(".fa-bars").style.display = "block";
 }
-function showSideBar(){
+function showSideBar() {
   const sidemenu = document.querySelector('.sidemenu');
   sidemenu.style.display = 'block';
 }
-function hideSideBar(){ 
+function hideSideBar() {
   const hidemenu = document.querySelector('.sidemenu');
   hidemenu.style.display = 'none';
 }

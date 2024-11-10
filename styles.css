@@ -13,14 +13,15 @@ body {
     color: #fff;
     width: auto;
 }
+
 #loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1605504d; 
-    backdrop-filter: blur(10px); 
+    background-color: #1605504d;
+    backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -28,7 +29,7 @@ body {
     z-index: 9999;
 }
 
-/* Rotating Tech Pulse Text */
+
 .loader-text {
     font-size: 2em;
     color: #d85f00;
@@ -37,26 +38,30 @@ body {
     text-align: center;
 }
 
-/* Keyframes for circular clockwise rotation */
+
 @keyframes circularRotation {
     0% {
-        transform: rotate(0deg); /* Starting point */
+        transform: rotate(0deg);
     }
+
     25% {
-        transform: rotate(90deg); /* Quarter rotation */
+        transform: rotate(90deg);
     }
+
     50% {
-        transform: rotate(180deg); /* Halfway rotation */
+        transform: rotate(180deg);
     }
+
     75% {
-        transform: rotate(270deg); /* Three-quarter rotation */
+        transform: rotate(270deg);
     }
+
     100% {
-        transform: rotate(360deg); /* Full rotation back to start */
+        transform: rotate(360deg);
     }
 }
 
-/* header start*/
+/* --------------------services--------------------- */
 header {
     margin: 0;
     width: 100%;
@@ -175,6 +180,7 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* -------------------section 1------------------- */
 .home {
     display: flex;
     align-items: center;
@@ -258,7 +264,7 @@ nav a:hover::after {
     border-radius: 1rem0px;
 }
 
-/* Section-2 Styles */
+/* ------------------Section-2-------------------- */
 .about {
     padding: 30px;
     display: flex;
@@ -289,7 +295,6 @@ nav a:hover::after {
 
 .about-2 {
     color: #f86f03;
-    /* Orange highlight for "Me" */
 }
 
 .about-left {
@@ -300,7 +305,7 @@ nav a:hover::after {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
-    /* Rounded corners for the image */
+
     object-fit: cover;
 }
 
@@ -330,7 +335,7 @@ nav a:hover::after {
 
 .read-more {
     background-color: #f86f03;
-    /* Orange button color */
+
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -344,10 +349,10 @@ nav a:hover::after {
 .read-more:hover {
     background-color: #fff;
     color: #170550;
-    /* Darker orange on hover */
+
 }
 
-/* services */
+/* -------------------------section2---------------------------- */
 .services {
     background-color: #31065a;
 }
@@ -364,7 +369,7 @@ nav a:hover::after {
     text-align: center;
     font-size: 36px;
     color: #f86f03;
-    /* Orange for "Services" */
+
 }
 
 .section-3 .container {
@@ -379,7 +384,7 @@ nav a:hover::after {
     padding: 20px 0;
 }
 
-/* Service Card Styles */
+
 .services-list div {
     background-color: #fff;
     color: #3c1e74;
@@ -389,18 +394,19 @@ nav a:hover::after {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     width: 30%;
 }
-.services-list div:hover{
+
+.services-list div:hover {
     background-color: #170550;
     color: #d85f00;
     transform: translateY(-10px);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px #31065a;
 }
 
 .services-list div i {
     font-size: 50px;
     color: #f86f03;
-    /* Orange icons */
+
 }
 
 .services-list div h2 {
@@ -431,7 +437,7 @@ nav a:hover::after {
 
 .learn-more-1 {
     background-color: #f86f03;
-    /* Orange button color */
+
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -445,12 +451,12 @@ nav a:hover::after {
 .learn-more-1:hover {
     background-color: #170550;
     color: #d85f00;
-    /* Darker orange on hover */
+
 }
 
 .learn-more-2 {
     background-color: #f86f03;
-    /* Orange button color */
+
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -464,12 +470,10 @@ nav a:hover::after {
 .learn-more-2:hover {
     background-color: #170550;
     color: #d85f00;
-    /* Darker orange on hover */
 }
 
 .learn-more-3 {
     background-color: #f86f03;
-    /* Orange button color */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -483,7 +487,6 @@ nav a:hover::after {
 .learn-more-3:hover {
     background-color: #170550;
     color: #d85f00;
-    /* Darker orange on hover */
 }
 
 .services-details-1 {
@@ -507,7 +510,7 @@ nav a:hover::after {
     font-size: 16px;
 }
 
-/* .section-4 */
+/* ----------------------section 4---------------------- */
 
 .skill {
     padding: 20px;
@@ -553,30 +556,24 @@ nav a:hover::after {
 
 .progress-bar {
     width: 100%;
-    /* Ensure it takes the full width of its container */
     max-width: 300px;
-    /* Maximum width for larger screens */
     height: 10px;
     background-color: #4c3575;
-    /* Darker purple background for the bar */
     border-radius: 20px;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    /* Center alignment */
 }
 
 .progress-bar div {
     background-color: #f86f03;
-    /* Orange progress */
     height: 100%;
     width: 70%;
-    /* Example width, adjust dynamically if needed */
     border-radius: 20px;
     transition: width 0.5s ease;
 }
 
-/* .section-6 */
+/* -----------------section 5-------------- */
 .portfolio {
     text-align: center;
     background-color: #31065a;
@@ -595,22 +592,22 @@ nav a:hover::after {
     width: 60px;
     height: 3px;
     background-color: #f86f03;
-    /* Orange underline */
+
     margin: 10px auto 0;
 }
 
+/* ------------------------section5-------------------------- */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Portfolio Grid */
 .work-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columns */
+
     grid-gap: 20px;
-    /* Space between items */
+
     margin-top: 30px;
 }
 
@@ -694,6 +691,7 @@ nav a:hover::after {
     background-color: #d85f00;
 }
 
+/* ---------------------------------last section---------------------------  */
 .contact {
     background-color: #1a1052;
     color: #fff;
