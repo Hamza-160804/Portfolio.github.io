@@ -61,7 +61,7 @@ body {
     }
 }
 
-/* --------------------services--------------------- */
+/* --------------------Header--------------------- */
 header {
     margin: 0;
     width: 100%;
@@ -352,7 +352,7 @@ nav a:hover::after {
 
 }
 
-/* -------------------------section2---------------------------- */
+/* -------------------------section 3---------------------------- */
 .services {
     background-color: #31065a;
 }
@@ -596,7 +596,7 @@ nav a:hover::after {
     margin: 10px auto 0;
 }
 
-/* ------------------------section5-------------------------- */
+/* ------------------------section 6-------------------------- */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -691,7 +691,7 @@ nav a:hover::after {
     background-color: #d85f00;
 }
 
-/* ---------------------------------last section---------------------------  */
+/* ---------------------------------section 7---------------------------  */
 .contact {
     background-color: #1a1052;
     color: #fff;
@@ -904,14 +904,14 @@ form button:hover {
 #hireMeContactForm textarea::placeholder {
     color: white;
 }
-
+/* --------------------------footer-------------------------- */
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #31065a;
 }
-
+/* ---------------------------Responsiveness in  id tire mobile screen--------------------- */
 @media (max-width: 960px) {
     .hideonmobile {
         display: none;
@@ -1038,7 +1038,7 @@ footer {
         justify-content: center;
     }
 }
-
+/* -------------------------------------Responsiveness in small tire moblie screen------------------------ */
 @media (max-width: 480px) {
     .open {
         display: block;
